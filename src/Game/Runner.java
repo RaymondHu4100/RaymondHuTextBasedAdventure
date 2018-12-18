@@ -32,7 +32,6 @@ public class Runner {
                 break;
             }
         }
-        // add a roomAction() method in room and overwrite it. Make science, compsci, math and humanities rooms.
     }
     public static boolean move(String move, Floor floor, Person x)
     {
@@ -45,7 +44,6 @@ public class Runner {
                 return true;
             }
             return false;
-
         }
         if(move.toLowerCase().equals("s"))
         {

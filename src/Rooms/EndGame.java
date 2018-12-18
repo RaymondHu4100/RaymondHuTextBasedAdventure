@@ -2,10 +2,10 @@ package Rooms;
 
 import People.Person;
 
-public class WinningRoom extends House
+public class EndGame extends House
 {
+    public static int inventorpet = 0;
     private static boolean win = false;
-
 
     /**
      * Triggers the game ending conditions.
@@ -16,11 +16,12 @@ public class WinningRoom extends House
 
         occupant = x;
         this.win = true;
-        System.out.println("You have reached the end! You collected " + "6" + " out of 4 creatures!");
+        inventorpet = (Rooms.FireCreature.housepet) + (Rooms.WaterCreature.forestpet) + (Rooms.EarthCreature.roadpet);
+        System.out.println("You have reached the end! You collected " + inventorpet + " out of 4 creatures!");
     }
     public String toString ()
     {
-        return "W";
+        return "E";
     }
     public static void setWin(boolean a)
     {
